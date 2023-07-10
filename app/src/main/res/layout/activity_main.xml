@@ -7,12 +7,102 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/expenseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:text="Wydatki"
+        app:layout_constraintBottom_toTopOf="@+id/addExpenseBtn"
+        app:layout_constraintStart_toStartOf="@+id/expenseValueLabel" />
+
+    <TextView
+        android:id="@+id/expenseValueLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="48dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/addExpenseBtn"
+        app:layout_constraintEnd_toEndOf="@+id/addExpenseBtn"
+        app:layout_constraintStart_toStartOf="@+id/addExpenseBtn"
+        app:layout_constraintTop_toTopOf="@+id/expenseLabel" />
+
+    <Button
+        android:id="@+id/addExpenseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="63dp"
+        android:text="Dodaj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/budgetLabel"
+        android:layout_width="138dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/incomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="40dp"
+        android:text="Przychód"
+        app:layout_constraintBottom_toTopOf="@+id/addIncomeBtn"
+        app:layout_constraintStart_toStartOf="@+id/addIncomeBtn" />
+
+    <Button
+        android:id="@+id/addIncomeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:text="Dodaj"
+        app:layout_constraintBottom_toBottomOf="@+id/addExpenseBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addExpenseBtn" />
+
+    <TextView
+        android:id="@+id/incomeValueLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="4dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/addIncomeBtn"
+        app:layout_constraintEnd_toEndOf="@+id/incomeLabel"
+        app:layout_constraintStart_toStartOf="@+id/incomeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/incomeLabel" />
+
+    <TextView
+        android:id="@+id/leftLabel"
+        android:layout_width="85dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="320dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/newMonthBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp"
+        android:text="Nowy Miesiąc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
